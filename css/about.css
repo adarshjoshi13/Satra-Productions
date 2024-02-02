@@ -1,0 +1,841 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.para {
+    font-size: 1.2rem;
+    color: #8f9aa8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h-primary {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.red {
+    color: rgb(212, 69, 69);
+}
+
+li {
+    list-style: none;
+}
+
+.hover-dropdown .dropdown-menu {
+    display: none;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: darkslategray;
+    color: rgb(212, 69, 69) !important;
+}
+
+.btns {
+    width: 190px;
+    height: 55px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(212, 69, 69);
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: transparent;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+
+.btns:hover {
+    border: 2px solid #020205;
+    background-color: rgb(212, 69, 69);
+    transform: translateY(-10px);
+    color: white;
+}
+
+/* Header CSS */
+
+#header {
+    position: relative;
+    background: url('/images/aboutbg.webp') center/cover no-repeat;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+}
+
+
+.content {
+    width: 50%;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.content h3 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content p {
+    color: #b6c3d4;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Our Moto CSS */
+
+#Our-Moto {
+    background: url('/images/linerabackground.webp') center/cover no-repeat;
+    background-color: black;
+}
+
+.content-sec {
+    display: flex;
+}
+
+.red-temp {
+    color: rgb(212, 69, 69);
+}
+
+.part-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#lines {
+    color: white;
+
+}
+
+.num {
+    position: absolute;
+    right: 0%;
+}
+
+.bold-line-box {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+    animation-name: line;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.bold-line-box2 {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+    animation-name: line2;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.bold-line-box3 {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+    animation-name: line3;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.imgbox {
+    position: relative;
+}
+
+.imgbox img {
+    border: 1px solid rgb(212, 69, 69);
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 20px 10px rgba(63, 51, 51, 0.4);
+}
+
+.imgbox .smallbox {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: -20px;
+    right: -20px;
+    border-radius: 50%;
+    padding: 12%;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/* :::::::: OUR HIGHLIGHT STYLES ::::::::  */
+
+#Our-Highlights {
+    background-color: #000000e8;
+    color: white;
+}
+
+.icon {
+    font-size: 2.7rem;
+    color: rgb(212, 69, 69);
+}
+
+/* Our Best Services CSS */
+
+.shift-1 img {
+    border: 1px solid rgb(212, 69, 69);
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 20px 10px rgba(63, 51, 51, 0.4);
+}
+
+#Our-Services {
+    background-color: #020205;
+    color: white;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+#service-line {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+}
+
+.anim-1 {
+    animation-name: Sline;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Sline {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 82%;
+    }
+}
+
+#service-line2 {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+}
+
+.anim-2 {
+    animation-name: Sline2;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Sline2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+
+#service-line3 {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+}
+
+.anim-3 {
+    animation-name: Sline3;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Sline3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+#service-line4 {
+    position: relative;
+    width: 0%;
+    height: 40px;
+    border-bottom: 6px solid rgb(212, 69, 69);
+}
+
+.anim-4{
+    animation-name: Sline4;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Sline4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.shift-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Leading Firm CSS  */
+
+#leading-firm {
+    position: relative;
+    background: url('/images/leadingbg.webp') center/cover no-repeat;
+}
+
+#leading-firm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(150, 55, 55, 0.9), rgba(68, 49, 49, 0.9));
+}
+
+.cont-sec {
+    z-index: 1;
+}
+
+.igrow {
+    font-size: 4.6rem;
+    color: rgb(212, 69, 69);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details span {
+    color: rgb(212, 69, 69);
+}
+
+/* :::::::: MAKE ENQUIRY STYLES ::::::::  */
+
+#make-inquiry {
+    background: url('/images/inquirybg.webp') center/cover no-repeat fixed;
+}
+
+.inquiry-box {
+    background-color: black;
+    padding: 10px 120px;
+}
+
+.social-icons .ico {
+    background-color: transparent;
+    margin: 0px 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons .bi {
+    font-size: 2rem;
+    color: rgb(212, 69, 69);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.social-icons .ico:hover .bi {
+    border-color: rgb(212, 69, 69);
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.social-icons .ico:hover {
+    border-color: rgb(212, 69, 69);
+}
+
+#make-inquiry button {
+    height: 100px;
+    width: 200px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* :::::::: MAKE ENQUIRY STYLES ENDS ::::::::  */
+
+
+
+/* :::::::: MEDIA QUERIES ::::::::  */
+
+
+/* :::::::: PARA & HEADINGS QUERIES ::::::::  */
+
+@media (max-width: 1770px) {
+
+    i {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    .para {
+        font-size: 1.2rem;
+    }
+
+    i {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 1500px) {
+
+
+
+    .para {
+        font-size: 1.1rem;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        font-size: 1.1rem;
+    }
+
+    .h-primary {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .para {
+        font-size: 1rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .btns {
+        font-size: 1rem;
+    }
+
+    .h-primary {
+        font-size: 2.2rem;
+    }
+
+    .para {
+        font-size: 0.9rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    .btn {
+        width: 150px;
+        height: 35px;
+        font-size: 0.9rem;
+        border: 1px solid rgb(212, 69, 69);
+        color: white;
+        text-decoration: underline;
+        font-weight: 600;
+        background-color: none;
+        transition: all 0.5s;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 350px) {
+
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+    .red {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 298px) {
+
+    .h-primary {
+        font-size: 1.9rem;
+    }
+
+    .para {
+        font-size: 0.6rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* :::::::: PARA & HEADING QUERIES ENDS ::::::::  */
+
+
+
+/* :::::::: HEADER QUERIES ::::::::  */
+
+@media (max-width: 960px) {
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* :::::::: HEADER QUERIES ENDS ::::::::  */
+
+/* :::::::: OUR MOTO QUERIES ::::::::  */
+
+@media (max-width: 990px) {
+    .imgbox img {
+        content: url('/images/aboutus2.webp');
+    }
+}
+
+
+@media (max-width: 1600px) {
+
+    .smallbox h1 {
+        font-size: 4rem;
+    }
+
+    .smallbox p {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .smallbox h1 {
+        font-size: 3.8rem;
+    }
+
+    .smallbox p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .smallbox h1 {
+        font-size: 3.5rem;
+    }
+
+    .smallbox p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    .smallbox h1 {
+        font-size: 5rem;
+    }
+
+    .smallbox p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .smallbox h1 {
+        font-size: 4rem;
+    }
+
+    .smallbox p {
+        font-size: 1.2rem;
+    }
+
+    .imgbox .smallbox {
+        right: 0px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .smallbox h1 {
+        font-size: 2rem;
+    }
+
+    .smallbox p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .smallbox h1 {
+        font-size: 1.5rem;
+    }
+
+    .smallbox p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .smallbox h1 {
+        font-size: 1.2rem;
+    }
+
+    .smallbox p {
+        font-size: 0.4rem;
+    }
+
+}
+
+/* :::::::: OUR MOTO QUERIES ENDS ::::::::  */
+
+
+/* :::::::: OUR HIGHLIGHT QUERIES ::::::::  */
+
+@media (max-width: 990px) {
+
+    .highlight-cont h2,
+    .highlight-cont p {
+        text-align: center;
+    }
+
+    .highlight-cont .icon {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* :::::::: OUR HIGHLIGHT QUERIES ENDS ::::::::  */
+
+
+/* :::::::: OUR SERVICE QUERIES ::::::::  */
+
+@media (max-width:990px) {
+    .shift-1 img {
+        content: url('/images/aboutservice2.webp');
+    }
+
+    .shift-2 h4,
+    .shift-2 p {
+        text-align: center;
+    }
+}
+
+/* :::::::: OUR SERVICE QUERIES ENDS ::::::::  */
+
+
+/* :::::::: MAKE ENQUIRY QUERIES ::::::::  */
+
+@media (max-width: 850px) {
+
+    .social-icons .ico {
+        margin: 0px 9px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .social-icons .bi {
+        font-size: 1.8rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 2.2rem;
+    }
+
+    #make-inquiry button {
+        height: 80px;
+        width: 170px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 10px 70px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 10px 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 7px 15px;
+    }
+
+    .social-icons .ico {
+        margin: 0px 6px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .social-icons .bi {
+        font-size: 1.5rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 1.9rem;
+    }
+
+    #make-inquiry button {
+        height: 60px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 275px) {
+
+    .social-icons .ico {
+        margin: 0px 5px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .social-icons .bi {
+        font-size: 1rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 1.3rem;
+    }
+
+    #make-inquiry button {
+        height: 40px;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+}
+
+/* :::::::: MAKE ENQUIRY QUERIES ENDS ::::::::  */
+
+
+/* :::::::: MEDIA QUERIES ENDS ::::::::  */

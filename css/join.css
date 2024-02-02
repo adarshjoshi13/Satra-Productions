@@ -1,0 +1,662 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.para {
+    font-size: 1.2rem;
+    color: #8f9aa8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h-primary {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.red {
+    color: rgb(212, 69, 69);
+}
+
+li {
+    list-style: none;
+}
+
+.hover-dropdown .dropdown-menu {
+    display: none;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: darkslategray;
+    color: rgb(212, 69, 69) !important;
+}
+
+.btns {
+    width: 190px;
+    height: 55px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(212, 69, 69);
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: transparent;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+
+.btns:hover {
+    border: 2px solid #020205;
+    background-color: rgb(212, 69, 69);
+    transform: translateY(-10px);
+    color: white;
+}
+
+/* Header CSS */
+
+#header {
+    position: relative;
+    background: url('/images/joinbg.jpg') center/cover no-repeat;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+}
+
+
+.content {
+    width: 50%;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.content h3 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content p {
+    color: #b6c3d4;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* JOIN COURSE CSS */
+
+
+#join-course {
+    background-color: #020205;
+}
+
+.join-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.join-form form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.join-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}
+
+.form-control {
+    height: 40px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-size: 14px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control:-ms-input-placeholder {
+    /* IE 0+ */
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control:focus,
+.form-control:active {
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+textarea.form-control {
+    height: inherit !important;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+}
+
+
+.contact-wrap {
+    background: #fff;
+}
+
+.contact-wrap h3 {
+    color: #000;
+}
+
+@media (max-width: 991.98px) {
+    .info-wrap {
+        height: 400px;
+    }
+}
+
+.social-media h3 {
+    font-size: 18px;
+}
+
+.social-media p a {
+    color: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.social-media p a:hover {
+    color: #000;
+}
+
+.dbox {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .dbox {
+        margin-bottom: 0;
+    }
+}
+
+.dbox p {
+    margin-bottom: 0;
+}
+
+.dbox p span {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.2);
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dbox p a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+.download-pdf .btn {
+    width: 190px;
+    height: 55px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(212, 69, 69);
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: none;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+
+.download-pdf .btn:hover {
+    border: 2px solid #020205;
+    background-color: rgb(212, 69, 69);
+    transform: translateY(-10px);
+    color: white;
+}
+
+
+/* :::::::: MEDIA QUERIES ::::::::  */
+
+
+/* :::::::: PARA & HEADINGS QUERIES ::::::::  */
+
+@media (max-width: 1770px) {
+
+    i {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    .para {
+        font-size: 1.2rem;
+    }
+
+    i {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 1500px) {
+
+
+
+    .para {
+        font-size: 1.1rem;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        font-size: 1.1rem;
+    }
+
+    .h-primary {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .para {
+        font-size: 1rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .btns {
+        font-size: 1rem;
+    }
+
+    .h-primary {
+        font-size: 2.2rem;
+    }
+
+    .para {
+        font-size: 0.9rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    .btn {
+        width: 150px;
+        height: 35px;
+        font-size: 0.9rem;
+        border: 1px solid rgb(212, 69, 69);
+        color: white;
+        text-decoration: underline;
+        font-weight: 600;
+        background-color: none;
+        transition: all 0.5s;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 350px) {
+
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+    .red {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 298px) {
+
+    .h-primary {
+        font-size: 1.9rem;
+    }
+
+    .para {
+        font-size: 0.6rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* :::::::: PARA & HEADING QUERIES ENDS ::::::::  */
+
+
+
+/* :::::::: HEADER QUERIES ::::::::  */
+
+@media (max-width: 960px) {
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* :::::::: HEADER QUERIES ENDS ::::::::  */
+
+/* :::::::: OUR MOTO QUERIES ::::::::  */
+
+@media (max-width: 990px) {
+    .imgbox img {
+        content: url('/images/aboutus2.webp');
+    }
+}
+
+
+@media (max-width: 1600px) {
+
+    .smallbox h1 {
+        font-size: 4rem;
+    }
+
+    .smallbox p {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .smallbox h1 {
+        font-size: 3.8rem;
+    }
+
+    .smallbox p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .smallbox h1 {
+        font-size: 3.5rem;
+    }
+
+    .smallbox p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    .smallbox h1 {
+        font-size: 5rem;
+    }
+
+    .smallbox p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .smallbox h1 {
+        font-size: 4rem;
+    }
+
+    .smallbox p {
+        font-size: 1.2rem;
+    }
+
+    .imgbox .smallbox {
+        right: 0px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .smallbox h1 {
+        font-size: 2rem;
+    }
+
+    .smallbox p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .smallbox h1 {
+        font-size: 1.5rem;
+    }
+
+    .smallbox p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .smallbox h1 {
+        font-size: 1.2rem;
+    }
+
+    .smallbox p {
+        font-size: 0.4rem;
+    }
+
+}
+
+/* :::::::: OUR MOTO QUERIES ENDS ::::::::  */
+
+
+/* :::::::: OUR HIGHLIGHT QUERIES ::::::::  */
+
+@media (max-width: 990px) {
+
+    .highlight-cont h2,
+    .highlight-cont p {
+        text-align: center;
+    }
+
+    .highlight-cont .icon {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* :::::::: OUR HIGHLIGHT QUERIES ENDS ::::::::  */
+
+
+/* :::::::: OUR SERVICE QUERIES ::::::::  */
+
+@media (max-width:990px) {
+    .shift-1 img {
+        content: url('/images/aboutservice2.webp');
+    }
+
+    .shift-2 h4,
+    .shift-2 p {
+        text-align: center;
+    }
+}
+
+/* :::::::: OUR SERVICE QUERIES ENDS ::::::::  */
+
+
+/* :::::::: MAKE ENQUIRY QUERIES ::::::::  */
+
+@media (max-width: 850px) {
+
+    .social-icons .ico {
+        margin: 0px 9px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .social-icons .bi {
+        font-size: 1.8rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 2.2rem;
+    }
+
+    #make-inquiry button {
+        height: 80px;
+        width: 170px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 10px 70px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 10px 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .inquiry-box {
+        background-color: black;
+        padding: 7px 15px;
+    }
+
+    .social-icons .ico {
+        margin: 0px 6px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .social-icons .bi {
+        font-size: 1.5rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 1.9rem;
+    }
+
+    #make-inquiry button {
+        height: 60px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 275px) {
+
+    .social-icons .ico {
+        margin: 0px 5px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .social-icons .bi {
+        font-size: 1rem;
+    }
+
+    .social-icons .ico:hover .bi {
+        font-size: 1.3rem;
+    }
+
+    #make-inquiry button {
+        height: 40px;
+        width: 120px;
+        font-size: 0.8rem;
+    }
+
+}
+
+/* :::::::: MAKE ENQUIRY QUERIES ENDS ::::::::  */
+
+
+/* :::::::: MEDIA QUERIES ENDS ::::::::  */

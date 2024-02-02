@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar CSS */
+
+#navbar {
+  z-index: 1;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-right: 30px !important;
+}
+
+.hoverit {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.hoverit:hover {
+  color: rgb(212, 69, 69) !important;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+
+#dropdownmenu {
+  background-color: darkslategrey;
+}
+
+/* Footer CSS */
+
+#footer {
+  background-color: #020205;
+}
+
+.foot .para {
+  font-size: 1.1rem;
+}
+
+.c-red:hover {
+  color: rgb(212, 69, 69) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.foot .social-icons .ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0px 8px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid #8f9aa8;
+}
+
+.foot .social-icons .bi {
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.foot .social-icons .ico:hover .bi {
+  font-size: 2rem;
+}
+
+.foot .social-icons .ico:hover {
+  border-color: rgb(212, 69, 69);
+}
+
+.foot .para .bi {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+.foot {
+  padding-left: 40px;
+}
+
+/* Media Queries */
+
+/* Navbar Queries */
+
+@media (max-width: 990px) {
+  .bold {
+    padding-right: 0px !important;
+    font-size: 1.2rem;
+  }
+}
+
+/* Footer Queries */
+
+
+
+@media (max-width: 1500px) {
+
+  .foot .para{
+    font-size: 1rem !important
+  }
+
+  .foot .para .bi {
+    font-size: 1.4rem
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .foot .para .bi {
+    font-size: 1.3rem
+  }
+
+  .foot .para{
+    font-size: 0.9rem
+  }
+}
+
+@media (max-width: 990px) {
+
+  .foot .img {
+    display: flex;
+    align-items: center;
+  }
+
+  .foot .social-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .foot .para {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:990px) {
+
+  .foot {
+    padding-left: 0px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .foot .para {
+    font-size: 0.8rem;
+  }
+
+  .foot .social-icons .ico {
+    margin: 0px 7px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #8f9aa8;
+  }
+
+  .foot .social-icons .bi {
+    font-size: 1.2rem;
+  }
+
+  .foot .social-icons .ico:hover .bi {
+    font-size: 1.4rem;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 970px) {
+  .noneit {
+    display: none;
+  }
+}
